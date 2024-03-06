@@ -2,122 +2,37 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
+# Solid March Mini-Hackathon 
 
-[Link to another page](./another-page.html).
+Welcome, and thank you for participating in the Solid March Mini-Hackathon!
 
-There should be whitespace between paragraphs.
+Interoperability is core to making Solid successful. We want to be sure that applications can work together, even if the developer teams aren't in communication.
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
+That's why, for this March Hackathon, we will provide participants with a set [ShEx](https://shex.io) shapes. They are encouraged to use the shapes as a basis for their application.
 
-# Header 1
+## Register
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+[Register for the Hackathon Here](https://docs.google.com/forms/d/e/1FAIpQLScJgFk2eH-U1UoeRFgtsRFDpRQhTFZdYhCFeirdtEZrpUNXnQ/viewform?usp=sf_link)
 
-## Header 2
+Registrations will remain open even after the hackathon has begun.
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
+## Important Dates
 
-### Header 3
+ - __2024/03/18__: Hackathon officially begins
+ - __2024/04/01__: Hacking period ends. Projects are accepted any time of day anywhere on Earth.
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
+## Developer Tools
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+We encourage you to use one of the following developer tools. Each supports ShEx shapes.
 
-#### Header 4
+ - [Linked Data Objects (LDO)](https://ldo.js.org) - A tool that lets developers manipulate Linked Data like typescript objects. ShEx is used to generate TypeScript. LDO works with any JavaScript framework, but has a special library for React. (__If you decide to use LDO, Jackson Morgan would also like to interview you on your experience, but participation in interviews is optional.__)
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+## ShEx Shapes
 
-##### Header 5
+You may choose to use any ShEx shape they like, make modifications to shapes, or decide to build applications their own way. But, if you're looking for a place to get started, see the shapes below:
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+ - [Activity Pub](./shex/activity-pub.shex): Activity Pub is a general-use social media ontology used in popular platforms like Mastodon.
 
-###### Header 6
+## Submit your Project
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+Once you have completed your project, [Submit your project here](https://docs.google.com/forms/d/e/1FAIpQLSdbFQuJj7a00ez7V5wGAXd40-WjmO3q1rJ5lvA9D2uXowkCMA/viewform?usp=sf_link).
