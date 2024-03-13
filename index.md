@@ -32,6 +32,7 @@ All participants will be featured on the [March 2024 Hackathon Hall of Fame](./h
 We encourage you to use one of the following developer tools. Each supports ShEx shapes.
 
  - [Linked Data Objects (LDO)](https://ldo.js.org) - A tool that lets developers manipulate Linked Data like typescript objects. ShEx is used to generate TypeScript. LDO works with any JavaScript framework, but has a special library for React. (__If you decide to use LDO, Jackson Morgan would also like to interview you on your experience, but participation in interviews is optional.__)
+ - [Solid Application Interoperability (SAI)](https://github.com/janeirodigital/sai-js) - A tool that lets developers work with the user's data and the data of others in that user's social graph, given that the user has been granted access to some of their data. SAI also simplifies scenarios where the user and their peers in the social graph have multiple pods each. (__If you decide to use SAI, please be prepared for an early adopter experience. elf Pavlik has committed to assisting other participants with any SAI related issues.__)
 
 ## ShEx Shapes
 
