@@ -36,7 +36,7 @@ We encourage you to use one of the following developer tools. Each supports ShEx
 
 ## ShEx Shapes
 
-You may choose to use any ShEx shape they like, make modifications to shapes, or decide to build applications their own way. But, if you're looking for a place to get started, see the shapes below:
+You may choose to use any ShEx shape you like, make modifications to shapes, or decide to build applications their own way. But, if you're looking for a place to get started, see the shapes below:
 
  - [Solid Profile](./shex/profile.shex): The Solid Profile defines the shape of data in a Solid WebId document.
  - [Activity Pub](./shex/activity-pub.shex): Activity Pub is a general-use social media ontology used in popular platforms like Mastodon.
