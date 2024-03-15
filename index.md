@@ -19,7 +19,7 @@ Registrations will remain open even after the hackathon has begun.
 ## Prizes
 All participants will be featured on the [March 2024 Hackathon Hall of Fame](./hall-of-fame/march2024.md), and first and second place will recieive special badges. In addition, first and second place will recieve cash prizes.
 
- - First Place will recieve $400 USD.
+ - First Place will receive $400 USD.
  - Second Place will receive $200 USD.
 
 ## Important Dates
