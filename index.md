@@ -8,7 +8,7 @@ Welcome, and thank you for participating in the Solid March Mini-Hackathon!
 
 Interoperability is core to making Solid successful. We want to be sure that applications can work together, even if the developer teams aren't in communication.
 
-That's why, for this March Hackathon, we will provide participants with a set [ShEx](https://shex.io) shapes. They are encouraged to use the shapes as a basis for their application.
+That's why, for this March Hackathon, we will provide participants with a set of [ShEx](https://shex.io) shapes (see below). They are encouraged to use the shapes as a basis for their application.
 
 ## Register
 
@@ -20,7 +20,7 @@ Registrations will remain open even after the hackathon has begun.
 All participants will be featured on the [March 2024 Hackathon Hall of Fame](./hall-of-fame/march2024.md), and first and second place will recieive special badges. In addition, first and second place will recieve cash prizes.
 
  - First Place will recieve $400 USD.
- - Second Place will recieve $200 USD.
+ - Second Place will receive $200 USD.
 
 ## Important Dates
 
