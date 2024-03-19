@@ -30,7 +30,7 @@ sra:ActivityPubObject EXTRA a {
       // rdfs:comment "The content or textual representation of the Object encoded as a JSON string. By default, the value of content is HTML. The mediaType property can be used in the object to indicate a different content type. The content MAY be expressed using multiple language-tagged values. " ;
     
     (as:context @sra:ActivityPubObject * ; as:context @sra:Link *)
-      // rdfs:comment "Identifies the context within which the object exists or an activity was performed. The notion of \\"context\\" used is intentionally vague. The intended function is to serve as a means of grouping objects and activities that share a common originating context or purpose. An example could be all activities relating to a common project or event." ;
+      // rdfs:comment "Identifies the context within which the object exists or an activity was performed. The notion of \"context\" used is intentionally vague. The intended function is to serve as a means of grouping objects and activities that share a common originating context or purpose. An example could be all activities relating to a common project or event." ;
 
     (as:name xsd:string * ; as:name rdf:langString *)
       // rdfs:comment "A simple, human-readable, plain-text name for the object. HTML markup MUST NOT be included. The name MAY be expressed using multiple language-tagged values." ;
@@ -69,7 +69,7 @@ sra:ActivityPubObject EXTRA a {
       // rdfs:comment "A natural language summarization of the object encoded as HTML. Multiple language tagged summaries MAY be provided." ;
     
     (as:tag @sra:ActivityPubObject * ; as:tag @sra:Link *)
-      // rdfs:comment "One or more \\"tags\\" that have been associated with an objects. A tag can be any kind of Object. The key difference between attachment and tag is that the former implies association by inclusion, while the latter implies associated by reference." ;
+      // rdfs:comment "One or more \"tags\" that have been associated with an objects. A tag can be any kind of Object. The key difference between attachment and tag is that the former implies association by inclusion, while the latter implies associated by reference." ;
     
     as:updated xsd:dateTime ?
       // rdfs:comment "The date and time at which the object was updated" ;
@@ -93,7 +93,7 @@ sra:ActivityPubObject EXTRA a {
       // rdfs:comment "When used on a Link, identifies the MIME media type of the referenced resource. When used on an Object, identifies the MIME media type of the value of the content property. If not specified, the content property is assumed to contain text/html content." ;
     
     as:duration xsd:duration ?
-      // rdfs:comment "When the object describes a time-bound resource, such as an audio or video, a meeting, etc, the duration property indicates the object's approximate duration. The value MUST be expressed as an xsd:duration as defined by [ xmlschema11-2], section 3.3.6 (e.g. a period of 5 seconds is represented as \\"PT5S\\")." ;
+      // rdfs:comment "When the object describes a time-bound resource, such as an audio or video, a meeting, etc, the duration property indicates the object's approximate duration. The value MUST be expressed as an xsd:duration as defined by [ xmlschema11-2], section 3.3.6 (e.g. a period of 5 seconds is represented as \"PT5S\")." ;
   ) ;
 }
 
@@ -109,7 +109,7 @@ sra:Link EXTRA a {
       // rdfs:comment "The target resource pointed to by a Link." ;
 
     as:rel xsd:string *
-      // rdfs:comment "A link relation associated with a Link. The value MUST conform to both the [HTML5] and [RFC5988] \\"link relation\\" definitions. In the [HTML5], any string not containing the \\"space\\" U+0020, \\"tab\\" (U+0009), \\"LF\\" (U+000A), \\"FF\\" (U+000C), \\"CR\\" (U+000D) or \\",\\" (U+002C) characters can be used as a valid link relation." ;
+      // rdfs:comment "A link relation associated with a Link. The value MUST conform to both the [HTML5] and [RFC5988] \"link relation\" definitions. In the [HTML5], any string not containing the \"space\" U+0020, \"tab\" (U+0009), \"LF\" (U+000A), \"FF\" (U+000C), \"CR\" (U+000D) or \",\" (U+002C) characters can be used as a valid link relation." ;
 
     as:mediaType xsd:string ?
       // rdfs:comment "When used on a Link, identifies the MIME media type of the referenced resource. When used on an Object, identifies the MIME media type of the value of the content property. If not specified, the content property is assumed to contain text/html content." ;
@@ -144,16 +144,16 @@ sra:Activity EXTRA a {
       // rdfs:comment "Describes one or more entities that either performed or are expected to perform the activity. Any single activity can have multiple actors. The actor MAY be specified using an indirect Link." ;
 
     (as:object @sra:ActivityPubObject * ; as:object @sra:Link *)
-      // rdfs:comment "When used within an Activity, describes the direct object of the activity. For instance, in the activity \\"John added a movie to his wishlist\\", the object of the activity is the movie added. When used within a Relationship describes the entity to which the subject is related." ;
+      // rdfs:comment "When used within an Activity, describes the direct object of the activity. For instance, in the activity \"John added a movie to his wishlist\", the object of the activity is the movie added. When used within a Relationship describes the entity to which the subject is related." ;
 
     (as:target @sra:ActivityPubObject * ; as:target @sra:Link *)
-      // rdfs:comment "Describes the indirect object, or target, of the activity. The precise meaning of the target is largely dependent on the type of action being described but will often be the object of the English preposition \\"to\\". For instance, in the activity \\"John added a movie to his wishlist\\", the target of the activity is John's wishlist. An activity can have more than one target." ;
+      // rdfs:comment "Describes the indirect object, or target, of the activity. The precise meaning of the target is largely dependent on the type of action being described but will often be the object of the English preposition \"to\". For instance, in the activity \"John added a movie to his wishlist\", the target of the activity is John's wishlist. An activity can have more than one target." ;
 
     (as:result @sra:ActivityPubObject * ; as:result @sra:Link *)
       // rdfs:comment "Describes the result of the activity. For instance, if a particular action results in the creation of a new resource, the result property can be used to describe that new resource." ;
 
     (as:origin @sra:ActivityPubObject * ; as:origin @sra:Link *)
-      // rdfs:comment "Describes an indirect object of the activity from which the activity is directed. The precise meaning of the origin is the object of the English preposition \\"from\\". For instance, in the activity \\"John moved an item to List B from List A\\", the origin of the activity is \\"List A\\". " ;
+      // rdfs:comment "Describes an indirect object of the activity from which the activity is directed. The precise meaning of the origin is the object of the English preposition \"from\". For instance, in the activity \"John moved an item to List B from List A\", the origin of the activity is \"List A\". " ;
 
     (as:instrument @sra:ActivityPubObject * ; as:instrument @sra:Link *)
       // rdfs:comment "Identifies one or more objects used (or to be used) in the completion of an Activity." ;
@@ -315,7 +315,7 @@ sra:Follow EXTRA a {
   $sra:FollowShape (
     &sra:ActivityShape ;
     a [ as:Follow ]
-      // rdfs:comment "Indicates that the actor is \\"following\\" the object. Following is defined in the sense typically used within Social systems in which the actor is interested in any activity performed by or on the object. The target and origin typically have no defined meaning." ;
+      // rdfs:comment "Indicates that the actor is \"following\" the object. Following is defined in the sense typically used within Social systems in which the actor is interested in any activity performed by or on the object. The target and origin typically have no defined meaning." ;
   ) ;
 }
 
@@ -425,7 +425,7 @@ sra:Undo EXTRA a {
   $sra:UndoShape (
     &sra:ActivityShape ;
     a [ as:Undo ]
-      // rdfs:comment " Indicates that the actor is undoing the object. In most cases, the object will be an Activity describing some previously performed action (for instance, a person may have previously \\"liked\\" an article but, for whatever reason, might choose to undo that like at some later point in time). The target and origin typically have no defined meaning." ;
+      // rdfs:comment " Indicates that the actor is undoing the object. In most cases, the object will be an Activity describing some previously performed action (for instance, a person may have previously \"liked\" an article but, for whatever reason, might choose to undo that like at some later point in time). The target and origin typically have no defined meaning." ;
   ) ;
 }
 
@@ -524,7 +524,7 @@ sra:Flag EXTRA a {
   $sra:FlagShape (
     &sra:ActivityShape ;
     a [ as:Flag ]
-      // rdfs:comment "Indicates that the actor is \\"flagging\\" the object. Flagging is defined in the sense common to many social platforms as reporting content as being inappropriate for any number of reasons." ;
+      // rdfs:comment "Indicates that the actor is \"flagging\" the object. Flagging is defined in the sense common to many social platforms as reporting content as being inappropriate for any number of reasons." ;
   ) ;
 }
 
@@ -625,10 +625,10 @@ sra:Relationship EXTRA a {
       // rdfs:comment " Describes a relationship between two individuals. The subject and object properties are used to identify the connected individuals. See 5.2 Representing Relationships Between Entities for additional information. " ;
     
     (as:subject @sra:ActivityPubObject ? | as:subject @sra:Link ?)
-      // rdfs:comment "On a Relationship object, the subject property identifies one of the connected individuals. For instance, for a Relationship object describing \\"John is related to Sally\\", subject would refer to John." ;
+      // rdfs:comment "On a Relationship object, the subject property identifies one of the connected individuals. For instance, for a Relationship object describing \"John is related to Sally\", subject would refer to John." ;
     
     (as:object @sra:ActivityPubObject ? | as:object @sra:Link ?)
-      // rdfs:comment "When used within an Activity, describes the direct object of the activity. For instance, in the activity \\"John added a movie to his wishlist\\", the object of the activity is the movie added. When used within a Relationship describes the entity to which the subject is related." ;
+      // rdfs:comment "When used within an Activity, describes the direct object of the activity. For instance, in the activity \"John added a movie to his wishlist\", the object of the activity is the movie added. When used within a Relationship describes the entity to which the subject is related." ;
 
     as:relationship @sra:ActivityPubObject *
       // rdfs:comment "On a Relationship object, the relationship property identifies the kind of relationship that exists between subject and object."
@@ -733,10 +733,10 @@ sra:Place EXTRA a {
       // rdfs:comment "Represents a logical or physical location. See 5.3 Representing Places for additional information." ;
 
     as:accuracy xsd:float ?
-      // rdfs:comment "Indicates the accuracy of position coordinates on a Place objects. Expressed in properties of percentage. e.g. \\"94.0\\" means \\"94.0% accurate\\"." ;
+      // rdfs:comment "Indicates the accuracy of position coordinates on a Place objects. Expressed in properties of percentage. e.g. \"94.0\" means \"94.0% accurate\"." ;
 
     as:altitude xsd:float ?
-      // rdfs:comment "Indicates the altitude of a place. The measurement units is indicated using the units property. If units is not specified, the default is assumed to be \\"m\\" indicating meters. " ;
+      // rdfs:comment "Indicates the altitude of a place. The measurement units is indicated using the units property. If units is not specified, the default is assumed to be \"m\" indicating meters. " ;
     
     as:latitude xsd:float ?
       // rdfs:comment "The latitude of a place" ;
@@ -745,10 +745,10 @@ sra:Place EXTRA a {
       // rdfs:comment "The longitude of a place" ;
 
     as:radius xsd:float ?
-      // rdfs:comment "The radius from the given latitude and longitude for a Place. The units is expressed by the units property. If units is not specified, the default is assumed to be \\"m\\" indicating \\"meters\\"." ;
+      // rdfs:comment "The radius from the given latitude and longitude for a Place. The units is expressed by the units property. If units is not specified, the default is assumed to be \"m\" indicating \"meters\"." ;
     
     (as:unit ["cm"^^xsd:string "feet"^^xsd:string "inches"^^xsd:string "km"^^xsd:string "m"^^xsd:string "miles"^^xsd:string ] ? | as:unit xsd:anyURI)
-      // rdfs:comment "Specifies the measurement units for the radius and altitude properties on a Place object. If not specified, the default is assumed to be \\"m\\" for \\"meters\\"." ;
+      // rdfs:comment "Specifies the measurement units for the radius and altitude properties on a Place object. If not specified, the default is assumed to be \"m\" for \"meters\"." ;
   ) ;
 }
 
