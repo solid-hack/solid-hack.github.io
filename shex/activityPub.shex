@@ -561,11 +561,34 @@ sra:Question EXTRA a {
 }
 
 # ----------------------------------------------------
+# Actor
+# ----------------------------------------------------
+sra:Actor EXTRA a {
+  $sra:ActorShape (
+    &sra:ObjectShape ;
+    as:inbox @sra:OrderedCollection
+      // rdfs:comment "A reference to an [ActivityStreams] OrderedCollection comprised of all the messages received by the actor." ;
+    as:outbox @sra:OrderedCollection
+      // rdfs:comment "An [ActivityStreams] OrderedCollection comprised of all the messages produced by the actor." ;
+    as:following @sra:Collection ?
+      // rdfs:comment "A link to an [ActivityStreams] collection of the actors that this actor is following" ;
+    as:followers @sra:Collection ?
+      // rdfs:comment "A link to an [ActivityStreams] collection of the actors that follow this actor." ;
+    as:liked @sra:Collection ?
+      // rdfs:comment "A link to an [ActivityStreams] collection of objects this actor has liked." ;
+    as:streams @sra:Collection ?
+      // rdfs:comment "A list of supplementary Collections which may be of interest." ;
+    as:preferredUsername xsd:string ?
+      // rdfs:comment "A short username which may be used to refer to the actor, with no uniqueness guarantees." ;
+  ) ;
+}
+
+# ----------------------------------------------------
 # Application
 # ----------------------------------------------------
 sra:Application EXTRA a {
   $sra:ApplicationShape (
-    &sra:ObjectShape ;
+    &sra:ActorShape ;
     a [ as:Application ]
       // rdfs:comment "Describes a software application." ;
   ) ;
@@ -576,7 +599,7 @@ sra:Application EXTRA a {
 # ----------------------------------------------------
 sra:Group EXTRA a {
   $sra:GroupShape (
-    &sra:ObjectShape ;
+    &sra:ActorShape ;
     a [ as:Group ]
       // rdfs:comment "Represents a formal or informal collective of Actors." ;
   ) ;
@@ -587,7 +610,7 @@ sra:Group EXTRA a {
 # ----------------------------------------------------
 sra:Organization EXTRA a {
   $sra:OrganizationShape (
-    &sra:ObjectShape ;
+    &sra:ActorShape ;
     a [ as:Organization ]
       // rdfs:comment "Represents an organization." ;
   ) ;
@@ -598,7 +621,7 @@ sra:Organization EXTRA a {
 # ----------------------------------------------------
 sra:Person EXTRA a {
   $sra:PersonShape (
-    &sra:ObjectShape ;
+    &sra:ActorShape ;
     a [ as:Person ]
       // rdfs:comment "Represents an individual person." ;
   ) ;
@@ -609,7 +632,7 @@ sra:Person EXTRA a {
 # ----------------------------------------------------
 sra:Service EXTRA a {
   $sra:ServiceShape (
-    &sra:ObjectShape ;
+    &sra:ActorShape ;
     a [ as:Service ]
       // rdfs:comment "Represents a service of any kind." ;
   ) ;
